@@ -221,11 +221,11 @@ non-zero\\ on all $(a,b)$ \& (1)$ \lim_{x \to
 \\
 \textbf{The Integral}\\
 -\textbf{Upper and Lower Sums}\\
--$U(f,P)=\sum_{k=1}^{n}M_k(x_k-x_{k-1})$, LUP for sums\\
--$L(f,P)=\sum_{k=1}^{n}m_k(x_k-x_{k-1})$, GLW for sums\\
+-$U(f,P)=\sum_{k=1}^{n}M_k(x_k-x_{k-1})$, LUB for sums\\of f and P\\
+-$L(f,P)=\sum_{k=1}^{n}m_k(x_k-x_{k-1})$, GLB for sums\\of f and P\\
 -\textbf{Refinement} Let $P$ and $Q$ be partitions of a \\closed bounded interval $[a,b]$. $Q$ is a refinement\\ of $P$ if $P \subset Q$. Partitions are refinements of\\ themselves.\\
 -\textbf{TH 5.1.4} Let $f$ be a bounded fn on a closed\\ bounded interval $[a,b]$ and $Q$ is a refinement of \\$P$, then $L(f,P)\leq L(f,Q)\leq U(f,Q) \leq U(f,Q)$\\
--\textbf{TH 5.1.5} If $P$ and $Q$ are any two partitions of \\a closed bounded interval $[a,b]$ and $f$ is a \\bounded and $f$ is a bounded fn on $[a,b]$ then \\ $L(f,P)\leq U(f,Q)$\\
+-\textbf{TH 5.1.5} If $P$ and $Q$ are any two partitions of \\a closed bounded interval $[a,b]$ and $f$ is a \\bounded fn on $[a,b]$ then $L(f,P)\leq U(f,Q)$\\
 -\textbf{The Integral}\\
 $\int_{a}^{-b}f dx=inf\{U(f,Q): Q$ is a partition of $[a,b]\}$\\
 $\int_{-a}^{b}f dx=sup\{L(f,Q): Q$ is a partition of $[a,b]\}$\\
@@ -235,13 +235,13 @@ $\int_{-a}^{b}f dx=sup\{L(f,Q): Q$ is a partition of $[a,b]\}$\\
 \begin{tabular}{@{}ll@{}}
 
 
--\textbf{TH 5.1.7} The Riemann intergral of $f$ on $[a,b]$\\ exist iff, for each $\epsilon >0$ there is a partition P of \\ $[a,b]$ s.t. $U(f,P)-L(f,P)< \epsilon $\\
--\textbf{TH 5.1.8} The Integral exist iff there is a\\ sequence $\{P_n\}$ of partitions of $[a,b]$ s.t.\\ $lim(U(f,P_n))-L(f,P_n))=0$. In this case,\\
+-\textbf{TH 5.1.7} The Riemann integral of $f$ on $[a,b]$\\ exist iff, for each $\epsilon >0$ there is a partition P of \\ $[a,b]$ s.t. $U(f,P)-L(f,P)< \epsilon $\\
+-\textbf{TH 5.1.8} The Integral exists iff there is a\\ sequence $\{P_n\}$ of partitions of $[a,b]$ s.t.\\ $lim(U(f,P_n))-L(f,P_n))=0$. In this case,\\
 $\int_{a}^{b}f(x)dx=limS_n(f)$ where, for each $n$, $S_n(f)$\\ may be chosen to be $U(f,P_n)$, $L(f,P_n)$, or any \\Riemann sum for $f$ and the partition $P_n$\\
 -\textbf{TH 5.2.1} If $f$ is a monotone fn on a closed\\ bounded interval $[a,b]$ then $f$ is integrable on\\ $[a,b]$\\
 -\textbf{TH 5.2.2} If $f$ is a cont. fn. on a closed bounded \\interval $[a,b]$, then $f$ is integrable on $[a,b]$. \\
 -\textbf{TH 5.2.4} If $f$ and $g$ are integrable fn on $[a,b]$\\ and $f(x) \leq g(x)$ for all $x \in [a,b]$, then\\ $\int_{a}^{b}f(x)dx \leq \int_{a}^{b}g(x)dx$\\
--\textbf{CO 5.2.5} Let $f$ be an integrable fn on the \\ closed bounded interval $I=[a,b]$ and $M=sup_i f$\\ and $m=inf_i f$. Then \\$m(b-a) \leq \int_{a}^{b}f(x)dx \leq M(b-a)$\\
+-\textbf{CO 5.2.5} Let $f$ be an integrable fn on the \\ closed bounded interval $I=[a,b]$ and $M=sup_I f$\\ and $m=inf_I f$. Then \\$m(b-a) \leq \int_{a}^{b}f(x)dx \leq M(b-a)$\\
 -\textbf{TH 5.2.6} If $f$ is integrable on $[a,b]$ then $|f|$ is \\ also integrable on $[a,b]$ and \\
 $|\int_{a}^{b}f(x)dx| \leq \int_{a}^{b}|f(x)|dx$\\
 -\textbf{Mean of Integrals} If $f$ is integrable fn. on a \\ bounded interval $[a,b]$, then the mean of $f$ on \\$[a,b]$ is the number $\frac{1}{b-a}\int_{a}^{b}f(x)dx$\\
@@ -251,8 +251,8 @@ $|\int_{a}^{b}f(x)dx| \leq \int_{a}^{b}|f(x)|dx$\\
 -\textbf{CO 5.2.10} If $f$ is a bounded fn on a closed\\bounded interval $[a,b]$ and $f$ is cont. except at \\finitely many points of $[a,b]$, then $f$ is integrable.\\
 -\textbf{First FTC} Let $[a,b]$ be a closed bounded \\interval and let $f$ be a fn. which is cont. on $[a,b]$ \\ and diff. on $(a,b)$ with $f'$ intergrable on $[a,b]$. Then \\ $\int_{a}^{b}f'(x)dx=f(b)-f(a)$\\
 -\textbf{Second FTC} Let $f$ be a fn. which is integrable\\ on a closed bounded interval $[b,c]$. For $a,x \in [b,c]$\\ define a fn. $F(x)$ by $F(x)=\int_{a}^{x}f(t)dt$. Then,  $F$ \\is cont. on $[b,c]$. At each point $x$ of $[b,c]$ where\\ $f$ is cont. the fn $F$ is diff. and $F'(x)=f(x)$.\\
--\text{U-Sub} Let $g$ be a diff. fn. on an open interval \\$I$ with $g'$ intergrable on $I$ and let $J=g(I)$. Let \\$f$ be cont. on $J$. Then for any pair $a,b \in I$, \\ $\int_{a}^{b}f(g(t))g'(t)dt=\int_{g(a)}^{g(b)}f(u)du$.\\
--\text{Integration by Parts} Suppose $f$ and $g$ are cont. \\fns. on a closed bounded interval $[a,b]$ and \\suppose that $f$ and $g$ are diff. on $(a,b)$ with\\ derivatives that are integrable on $[a,b]$. Then $fg'$ \\and $f'g$ are integrable on $[a,b]$ and \\ $\int_{a}^{b}f(x) g'(x)dx=$\\$f(b)g(b)-f(a)g(a)-\int_{a}^{b}g(x)f'(x)dx$\\
+-\textbf{U-Sub} Let $g$ be a diff. fn. on an open interval \\$I$ with $g'$ intergrable on $I$ and let $J=g(I)$. Let \\$f$ be cont. on $J$. Then for any pair $a,b \in I$, \\ $\int_{a}^{b}f(g(t))g'(t)dt=\int_{g(a)}^{g(b)}f(u)du$.\\
+-\textbf{Integration by Parts} Suppose $f$ and $g$ are cont. \\fns. on a closed bounded interval $[a,b]$ and \\suppose that $f$ and $g$ are diff. on $(a,b)$ with\\ derivatives that are integrable on $[a,b]$. Then $fg'$ \\and $f'g$ are integrable on $[a,b]$ and \\ $\int_{a}^{b}f(x) g'(x)dx=$\\$f(b)g(b)-f(a)g(a)-\int_{a}^{b}g(x)f'(x)dx$\\
 \\
 
 
@@ -270,7 +270,9 @@ $a^x=exp(xln(a))$, $a^{xy}=(a^x)^y$\\
 \\
 \\
 \textbf{EXTRA THEOREMS}\\
--\textbf{Hecht}A sequence of fns $f_n:I \to \mathbb{R}$ converges\\ uniformly to $f:I \to \mathbb{R}$ iff the sequence\\ $a_n=sup_I|f_n-f|$ converges to $0$\\
+-\textbf{Uniform Convergence}A sequence of fns\\ $f_n:I \to \mathbb{R}$ converges uniformly to $f:I \to \mathbb{R}$\\ iff the sequence\\ $a_n=sup_I|f_n-f|$ converges to $0$\\
+-\textbf{Lower and Upper Integral Inequality} \\If $f$ and $g$ are integrable fn on $[a,b]$\\ and $f(x) \leq g(x)$ for all $x \in [a,b]$, then\\ $\int_{--a}^{b}f(x)dx \leq \int_{--a}^{b}g(x)dx$\\ and $\int_{a}^{--b}f(x)dx \leq \int_{a}^{--b}g(x)dx$\\
+-\textbf{Constant K Integrability}\\Let $f,g$ : $[a,b] \to \mathbb{R}$.  Suppose\\ $f$ is integrable and $\exists$ a constant \\K \textless  0 s.t. $|g(x)-g(y)|< K|f(x)-f(y)|$\\ $\forall x,y,\in [a,b]$, then $g$ is integrable.
 \\-Example 3.3.2\\
 -Example 3.4.2,3.4.3\\
 -Example 4.1.9\\
