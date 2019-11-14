@@ -143,26 +143,25 @@ and suppose $a \in D$. Then f is continuous at $a$ iff\\ whenever $x_n$ is a seq
 
 \textbf{Theorem 3.1.11, Compositions of Functions}\\
 With $f$ and $g$ having $a \in D_g$ and $g(a) \in D_f$ \\then $a$ is in the domain $f\circ g$. Then $f\circ g$ is\\ continuous at $a$ if g is continuous at $a$ and $f$ is\\ continuous at $g(a)$.\\
-\textbf{Theorem 3.2.1} If $f$ is a continuous function\\ on a closed bounded interval $I$, then $f$ is bounded\\ on $I$, and it assumes both a minimum and\\ maximum value on $I$\\
+\textbf{Theorem 3.2.1} If $f$ is a continuous fn on a\\ closed bounded interval $I$, then $f$ is bounded\\ on $I$, and it assumes both a minimum and\\ maximum value on $I$\\
 \textbf{Intermediate Value Theorem}\\
-Let $f$ be defined and continuous on an interval\\ containing the points $a$ and $b$ and assume $a<b$.\\ If $y$ is any number between $f(a)$ and $f(b)$, then \\ there is a number $c$ with $a\leq c \leq b$ such that \\ \:$f(c)=y$. $ie$ takes on every value between bounds\\
+Let $f$ be defined and cont on an interval\\ containing the points $a$ and $b$ and assume $a<b$.\\ If $y$ is any number between $f(a)$ and $f(b)$, then \\ there exists $c$ with $a\leq c \leq b$ such that \:$f(c)=y$. \\$ie$ takes on every value between bounds\\
 \textbf{TH 3.2.4} If $f$ is a continuous function defined on\\ a closed bounded interval $I=[a,b]$, then $f(I)$ is\\ also a closed, bounded interval or a single point.\\
 \textbf{TH 3.2.5} If $f$ is strictly monotone on $I$ and its \\ range $f(I)$ is an interval, then $f$ is continuous \\on $I$.\\
 \textbf{TH 3.2.5} A cont., strictly monotone fn $f$ on a \\closed interval $I$ has a continuous  inverse fn\\ defined on $J=f(I)$. That is, there is a cont. fn. \\ $g$ with domain $J$ s.t. $g(f(x))=x$ for all $x \in I$\\ and $f(g(y))=y$ for all $y \in J$\\
-- If $f$ is a function with domain $D$, then $f$ is said to \\ be uniformly contiuous on $D$ if for each $\varepsilon >0$, there \\ is a $\delta >0$ s.t. $|f(x)-f(a)|< \epsilon$ whenever $x,a,\in D$ \\ and $|x-a|<\delta$.
-\textbf{Note}: For Uniform Continuity, \\ a single $\delta$ must be chosen that works for all points\\ $a\in D$. In continuity, $\delta$ is allowed to depend on $a$.\\
+-\textbf{Uniform Cont}If $f$ is a function with domain $D$\\ then $f$ is said to be uniformly cont on $D$ if for \\each $\varepsilon >0$, there is a $\delta >0$ s.t. $|f(x)-f(a)|< \epsilon$\\ whenever $x,a,\in D$  and $|x-a|<\delta$.\\
 -\textbf{TH 3.3.4} If $f$ is a cont. fn. on a closed bounded \\interval $I$, then $f$ is uniformly cont. on $I$.\\
--\textbf{TH 3.3.5} If $f$ is uniformly cont. on its domain $D$,\\ and if $\{x_n\}$ is any Cauchy sequence in $D$, then \\$\{f(x_n)\}$ is also Cauchy.\\
--\textbf{TH 3.3.6} If $f$ is a cont. fn. on a bounded interval \\ $I$, which may not be closed, then $f$ has a cont. \\extension to $\bar{I}$ iff $f$ is uniformly cont. on $I$.\\
--\textbf{Uniform Convergence} Let $f_n$ be a sequence of\\ functions on a set $D \in \mathbb{R}$. Then: \\
+-\textbf{TH 3.3.5} If $f$ is uniformly cont. on its domain\\ $D$, and if $\{x_n\}$ is any Cauchy sequence in $D$,\\ then $\{f(x_n)\}$ is also Cauchy.\\
+-\textbf{TH 3.3.6} If $f$ is a cont. fn. on a bounded\\ interval $I$, which can be open, then $f$ has a\\ cont. extension to $\bar{I}$ iff $f$ is uniformly cont. on $I$.\\
+-\textbf{Uniform Convergence} Let $f_n$ be a sequence\\ of functions on a set $D \in \mathbb{R}$. Then: \\
 (a) $\{f_n\}$ converges pointwise to $f$ on $D$ if for each \\$x \in D$ and each $\epsilon >0,$ there is a $N$ s.t.\\
 $|f(x)-f_n(x)|< \epsilon $ whenever $ n>N$\\
-(b) $\{f_n\}$ converges uniformly on $D$ to $f$ if for each \\$\epsilon >0,$ there is a $N$ s.t.\\
+(b) $\{f_n\}$ converges uniformly on $D$ to $f$ if\\ for each $\epsilon >0,$ there is a $N$ s.t.\\
 $|f(x)-f_n(x)|< \epsilon $ whenever $x\in D$ and $ n>N$\\
 -\textbf{TH 3.4.5} Let $\{f_n\}$ be a sequence of functions\\ all of which are defined and cont. on a set $D$.\\ If $\{f_n\}$ converges uniformly to $f$ on $D$, then \\$f$ is cont. on $D$.\\
 -\textbf{TH 3.4.6} Let $\{f_n\}$ be a sequence of fns defined\\ on a set $D$. If there is a sequence of numbers $b_n$\\ s.t. $b_n \rightarrow 0$ and $|f_n (x)| \leq b_n$ for all $x\in D$, then\\ $\{f_n\}$ converges uniformly to $0$ on $D$. \\
 -\textbf{TH 3.4.7} Let $\{f_n\}$ be a sequence of fns defined\\ on a set $D$. If $\{f_n\}$ converges uniformly to 0 \\ on $D$, then $\{f_n(x_n)\}$ converges to 0 for every \\sequence $\{x_n\}$ of points of $D$.\\
--\textbf{TH 3.4.9} A sequence of functions $\{f_n\}$ on a set $D$ is\\ said to be  uniformly Cauchy on $D$ if for each $\epsilon >0,$ \\there is $N$ s.t. $|f_n(x)-f_m(x)| < \epsilon$ whenever $x \in D$ \\and $n,m>N$
+-\textbf{TH 3.4.9} A sequence of fns $\{f_n\}$ on a set $D$ is\\ said to be  uniformly Cauchy on $D$ if for each\\ $\epsilon >0,$ there is $N$ s.t. $|f_n(x)-f_m(x)| < \epsilon$\\ whenever $x \in D$ and $n,m>N$
 
 \end{tabular}
 
@@ -171,7 +170,7 @@ $|f(x)-f_n(x)|< \epsilon $ whenever $x\in D$ and $ n>N$\\
 
 \\
 \textbf{The Derivative}\\
--\textbf{Definition 4.1.1} Let $I$ be an open interval, $a$ a \\point of $I$, and $f$ a fn defined on $I$ except possibly at \\$a$. Then the limit of $f(x)$ as $x$ approaches $a$ is $L$ if, for \\ each $\epsilon >0$, there is a $\delta > 0$ s.t $|f(x)-L| < \epsilon$ \\whenever $x \in I$ and $0<|x-a|<\delta$\\
+-\textbf{Definition 4.1.1} Let $I$ be an open interval, $a$ a \\point of $I$, and $f$ a fn defined on $I$ except possibly at \\$a$. Then the limit of $f(x)$ as $x$ approaches $a$ is $L$ if\\, for each $\epsilon >0$, there is a $\delta > 0$ s.t $|f(x)-L| < \epsilon$ \\whenever $x \in I$ and $0<|x-a|<\delta$\\
 -\textbf{Definition 4.1.6} Let $f$ be a function defined on an \\open interval $(a,b)$ where $a$ could be $-\infty$ and $b$ \\could be $+\infty$. The lim from the right is\\ $\lim_{x \to a^{+}} f(x)=L$ if for every $\epsilon >0 $ there is a \\ $m \in (a,b)$ s.t. $|f(x)-L|<\epsilon $ whenever $a<x<m$. \\
 For left limit, it is whenever $m<x<b$\\
 -\textbf{TH 4.1.7} The limit exist iff the limit from left \\and right $=L$\\
@@ -200,9 +199,9 @@ or $f'(x)= \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}$\\
 
 -\textbf{TH 4.2.9} If $f$ is cont. and strictly monotone\\ on an open interval $I$ containing $a$, $f$ is diff. at\\ $a$, and $f'(a) \neq 0$, then the inverse fn $g$ of $f$ is diff\\ at $b=f(a)$ and $g'(b)=\frac{1}{f'(a)}=\frac{1}{f'(g(b))}$ ex 4.2.10\\
 
--\textbf{C P} A critical point is a point that satisfies:\\
+-\textbf{CP} A critical point is a point that satisfies:\\
 	
-1) c is an endpoint, 2) c is a statiornary point, or\\ c is a singular point, $f'(c)$ does not exist.\\
+1) c is an endpoint, 2) c is a stationary point, or\\ c is a singular point, $f'(c)$ does not exist.\\
 -\textbf{TH 4.3.1} If $f$ is cont. fn. on a closed bounded \\ interval $[a,b]$ and $c \in [a,b]$ is a max/min, then $c$ \\ is a critical point.\\
 -\textbf{MVT} If $f$ is cont. on the closed interval $[a,b]$\\ and is diff. on the open interval $(a,b)$, then there \\is at least one point $c \in (a,b)$ s.t.\\ $f'(c)=\frac{f(b)-f(a)}{b-a}$\\
 -\textbf{TH 4.3.3} If $f$ is diff. fn. on an open interval\\ $(a,b)$ and $f'$ is 0 on $(a,b)$, then $f$ is constant.\\
@@ -218,6 +217,7 @@ and let $u$ be \\
 $a^{+}$ or $b^{-}$. Suppose $g(x)$ and $g'(x)$ are 
 non-zero\\ on all $(a,b)$ \& (1)$ \lim_{x \to 
 	u}f(x)=0=\lim_{x \to u}g(x)$ \\ or (2) $ \lim_{x \to u}f(x)=\infty=\lim_{x \to u}g(x)$, then\\ $lim_{x \to u}\frac{f(x)}{g(x)}=lim_{x \to u}\frac{f'(x)}{g'(x)}$\\
+-Note: Conditions (1) and (2) refer to the\\ indeterminate form.
 \\
 \textbf{The Integral}\\
 -\textbf{Upper and Lower Sums}\\
