@@ -237,7 +237,10 @@ $a^x=exp(xln(a))$, $a^{xy}=(a^x)^y$\\
 -\textbf{Uni Conv} If $0 < r < 1, f_n(x) = x^n$ converges uni\\ to 0 on $[0,r]$. $|x^n-0| = x^n \leq r^n \forall  x  \in I$. Now choose\\ N s.t. $r^n < \epsilon$ when $n > N$. By thm 3.4.6.\\
 -\textbf{Ex 5.1.9} Show the Riemann integral of $f(x) = x^2$\\ on $[0,1]$ exists and equals $\frac{1}{3}$.  Pf: Divide into n\\equal intervals. Each has length $\frac{1}{n}$.  Then\\ $U(f, P) = \sum_{k=1}^{n} \frac{k}{n}^2\frac{1}{n} = \frac{1}{n^3}\sum_{k=1}^{n} k^2$ and\\ $L(f, P) = \sum_{k=1}^{n} \frac{k-1}{n}^2\frac{1}{n} = \frac{1}{n^3}\sum_{k=1}^{n-1} k^2$.  Then the\\difference is $\frac{1}{n}$. By thm 5.1.8, the int exists. Use\\ summation formula to solve. \\
 -\textbf{Ex 5.32} $f(x) = x^2sin(\frac{1}{x})$ if $x \ne 0$ and 0 if $x = 0$.\\Example of f which is diff on an interval\\with an integrable derivative which is not cont.\\
--\textbf{Ex 5.3.5} $\frac{d}{dx}\int_{x}^{2x}sint^2dt$ is equal to\\$\int_{0}^{2x}sint^2dt-\int_{0}^{x}sint^2dt$.  Using the 2 FTC and chain\\$2sin4x^2-sinx^2$
+-\textbf{Ex 5.3.5} $\frac{d}{dx}\int_{x}^{2x}sint^2dt$ is equal to\\$\int_{0}^{2x}sint^2dt-\int_{0}^{x}sint^2dt$.  Using the 2 FTC and chain\\$2sin4x^2-sinx^2$\\
+-\textbf{FTC Note} FTC can only be applied when function\\ is riemann integrable on interval.\\
+-\textbf{$f^2$ Integrability} If {f} is integrable on $[a,b]$, then so is $f^2$.\\
+-\textbf{Ex: MVT and Uni Cont} $f(x) = ln(x)$ on $[\frac{1}{2}, \infty]$\\Let $\epsilon > 0$.  Need $\delta$ s.t. $|x-y| < \delta \Rightarrow |ln(x)-ln(y)| < \epsilon$\\Note $\exists{c}$ s.t. $\frac{ln(x)-ln(y)}{x-y}=f'(c)$.  Also, \\ $\frac{1}{2} \leq c \leq \infty \Rightarrow 0 \leq \frac{1}{c} \leq 2$.  Thus, $\frac{ln(x)-ln(y)}{x-y}=\frac{1}{c} \leq 2$. \\ Now, $|ln(x)-ln(y)| \leq 2|x-y| \leq 2\delta = \epsilon$ if we set $\delta = \frac{\epsilon}{2}$.
 \end{tabular} 
 
 
