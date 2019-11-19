@@ -1,0 +1,250 @@
+\documentclass[10 pt,landscape]{article}
+\usepackage{multicol}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage[landscape]{geometry}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{centernot}
+
+\ifthenelse{\lengthtest { \paperwidth = 11in}}
+	{ \geometry{top=.1 in,left=.5in,right=.3in,bottom=.3in} }
+	{\ifthenelse{ \lengthtest{ \paperwidth = 297mm}}
+		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+	}
+
+% Turn off header and footer
+\pagestyle{empty}
+ 
+
+
+\makeatother
+
+
+
+% Don't print section numbers
+\setcounter{secnumdepth}{0}
+
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt plus 0.5ex}
+
+
+% -----------------------------------------------------------------------
+
+\begin{document}
+
+\raggedright
+\footnotesize
+\begin{multicols}{4}
+
+
+\begin{tabular}{@{}ll@{}}
+
+\textbf{Theorem 1.3.9}\\
+If k is an integer and $x^2=k$ has a rational \\solution, then that solution is an integer.\\
+\textbf{Archimedian Property} \\
+An ordered field has the archimedian property \\ if $\forall x \in \mathbb{R}$, there is a $n$ s.t $x\le n$.\\Another consequence is there is a rational\\ number between each pair of real numbers.\\
+\textbf{Sup and Inf}\\
+\textbf{Theorem 1.5.1} \\Every non-empty subset of $\mathbb{R}$ that is bounded\\ below has a G.L.B.\\
+\textbf{Sup} Sup A is the smallest $M \in \mathbb{R}$ \\s.t $a\leq M$ for every $a \in A$\\
+\textbf{Inf} Inf A is the largest $m \in \mathbb{R}$ s.t $m\leq a$ \\for every $a \in A$\\
+\textbf{Sequences}\\
+$|x-a| \le \varepsilon$ $\iff$ $a-\varepsilon <x<a+ \varepsilon$\\
+\textbf{Triangle Inequality}\\
+$|a+b|\leq |a|+|b|$ , $\lvert |a|-|b|\rvert \leq |a-b|$\\
+\textbf{Definition of a Limit}\\
+A sequence $a_n$ converges if, for each  $\varepsilon >0$, there \\ is a $N$ s.t 
+$|a_n-a|<\varepsilon $ whenever $n>N$\\
+\textbf{COR. 2.2.4} If a sequence converges its bounded\\
+\textbf{TH. 2.2.5} If lim$a_n=a$ then lim$|a_n|=|a|$\\
+\textbf{TH. 2.2.7} A sequence $a_n$ converges to $a$ iff,\\ for each $\varepsilon$, there are only finitely many n for\\ which $|a_n-a| \geq \varepsilon$\\
+\textbf{TH. 2.3.1} Let $a_n$ and $b_n$ be sequences of real\\ numbers and suppose lim$b_n=0$. If $a \in \mathbb{R}$ and if \\ there is a $N_1$ such that $|a_n-a|\leq b_n$ for all\\ $n>N$,  then $lima_n=a.$\\
+\textbf{TH. 2.3.2} Let $a_n$ be a sequence of real numbers\\ s.t. $lim\,a_n=0$, and let $b_n$ be a bounded sequence\\ Then the $lim\:a_nb_n=0.$\\
+\textbf{TH. 2.3.3, Squeeze}\\
+If $a_n$, $b_n$, and $c_n$ are sequences for which there is \\a number $K$ s.t. $b_n<a_n<c_n$ for all $n>K$, \\and if
+$b_n\rightarrow a$ and $c_n\rightarrow a$, then $a_n\rightarrow a$.\\
+\textbf{The Main Limit Theorem}\\
+Suppose $a_n\rightarrow a$, $b_n\rightarrow b$, $c$ is a real number,\\ and $K \in \mathbb{N}$\\
+(a)$ca_n\rightarrow ca$, (b) $a_n +b_n \rightarrow a+b$, (c) $a_nb_n\rightarrow ab$\\
+(d)$a_n/b_n\rightarrow a/b$ if $b\ne 0$ and $b_n\ne 0$ for all $n$\\
+(e) $a_n^k \rightarrow a^k$, (f) $a_n^{1/k} \rightarrow a^{1/k}$ if $a_n\geq 0$\\
+\textbf{TH. 2.3.8} If $a_n$ and $b_n$ are convergent sequences \\to $a$ and $b$, and if there is a $K$ s.t. $a_n<b_n$\\ whenever $n>K$,  then $a\leq b$\\
+\textbf{TH. 2.4.1, Monotone Convergence} \\Each bounded monotone sequence converges\\
+\textbf{TH. 2.4.6} \\Each monotone sequence has a limit\\
+\textbf{TH. 2.4.7} Let $a_n$ and $b_n$ be sequences of $\mathbb{R}$\\
+(a) if $a_n>0$ for all $n$, then\\ $lim\:a_n=\infty $ iff $lim\:1/a_n=0$\\
+(b) if $b_n$ is bounded below, then $lim\:a_n=\infty$ \\$\Rightarrow lim\: (a_n+b_n)=\infty$\\
+(c)$lim\:a_n=\infty$ iff $lim\:(-a_n)=-\infty$\\
+(d) if $a_n\leq b_n \, \forall n$, then $lim\:a_n=\infty \Rightarrow lim\:b_n=\infty$\\
+(e) if there is a positive constant $K$ s.t. \\ $k\leq b_n \ \forall n$
+then $lim\:a_nb_n=\infty$\\
+\\
+\end{tabular}
+
+
+\begin{tabular}{@{}ll@{}}
+
+
+\textbf{Cauchy}\\
+\textbf{Bolzano-Weierstrass}\\
+Every bounded sequence of real numbers has a\\ convergent subsequence.\\
+\textbf{Cauchy Sequence} A sequence is said to be \\Cauchy if, for every $\varepsilon >0$, there is an $N$ s.t. \\
+$|a_n-a_m|<\varepsilon $ whenever $n,m>N$\\
+\textbf{TH 2.5.8.} A sequence of real numbers is \\Cauchy if and only if it converges.\\
+\textbf{Continuity}\\
+\textbf{Def. 3.1.1} Let $f$ be a function with D $\subset \mathbb{R}$\\
+and let $a$ be an element of $D$. $F$ is continuous\\ at $a$, if, for each $\varepsilon >0$, there is a $\delta >0$ s.t. \\ $|f(x)-f(a)|< \varepsilon $ whenever $x \in D$ and \\$|x-a|< \delta$\\
+\textbf{Sequential Method} Let $F$ be a function on $D$\\
+and suppose $a \in D$. Then f is continuous at $a$ iff\\ whenever $x_n$ is a sequence in D which converges\\ to $a$, then $\{f(x_n)\}$ converges to $f(a)$\\
+\textbf{TH. 3.1.7} If $r$ is a positive rational number,\\ $f(x)=x^r$ is continuous on its natural domain\\
+\textbf{Combinations of Continuous Functions}\\ Let $f$ and $g$ be fns with on $D_f$ and $D_g$. Assume\\ $f$ and $g$ are both continuous at a point \\ $a \in =D_f\cap D_g$ and let c be a constant, then\\
+(b)$f+g$ is continuous at $a$\\
+(c) $fg$ is continuous at $a$\\
+(d)$f/g$ is continuous at $a$\\
+\textbf{Theorem 3.2.1} If $f$ is a continuous fn on a\\ closed bounded interval $I$, then $f$ is bounded\\ on $I$, and it assumes both a minimum and\\ maximum value on $I$\\
+\textbf{Intermediate Value Theorem}\\
+Let $f$ be defined and cont on an interval\\ containing the points $a$ and $b$ and assume $a<b$.\\ If $y$ is any number between $f(a)$ and $f(b)$, then \\ there exists $c$ with $a\leq c \leq b$ such that \:$f(c)=y$. \\$ie$ takes on every value between bounds\\
+\textbf{TH 3.2.4} If $f$ is a continuous function defined on\\ a closed bounded interval $I=[a,b]$, then $f(I)$ is\\ also a closed, bounded interval or a single point.\\
+\textbf{TH 3.2.5} If $f$ is strictly monotone on $I$ and its \\ range $f(I)$ is an interval, then $f$ is continuous \\on $I$.\\
+\textbf{TH 3.2.5} A cont., strictly monotone fn $f$ on a \\closed interval $I$ has a continuous  inverse fn\\ defined on $J=f(I)$. That is, there is a cont. fn. \\ $g$ with domain $J$ s.t. $g(f(x))=x$ for all $x \in I$\\ and $f(g(y))=y$ for all $y \in J$\\
+-\textbf{Uniform Cont}If $f$ is a function with domain $D$\\ then $f$ is said to be uniformly cont on $D$ if for \\each $\varepsilon >0$, there is a $\delta >0$ s.t. $|f(x)-f(a)|< \epsilon$\\ whenever $x,a,\in D$  and $|x-a|<\delta$.\\
+-\textbf{TH 3.3.4} If $f$ is a cont. fn. on a closed bounded \\interval $I$, then $f$ is uniformly cont. on $I$.\\
+-\textbf{TH 3.3.5} If $f$ is uniformly cont. on its domain\\ $D$, and if $\{x_n\}$ is any Cauchy sequence in $D$,\\ then $\{f(x_n)\}$ is also Cauchy.\\
+-\textbf{TH 3.3.6} If $f$ is a cont. fn. on a bounded\\ interval $I$, which can be open, then $f$ has a\\ cont. extension to $\bar{I}$ iff $f$ is uniformly cont. on $I$.\\
+\end{tabular}
+
+
+\begin{tabular}{@{}ll@{}}
+
+
+
+-\textbf{Uniform Convergence} Let $f_n$ be a sequence\\ of functions on a set $D \in \mathbb{R}$. Then: \\
+(a) $\{f_n\}$ converges pointwise to $f$ on $D$ if for each \\$x \in D$ and each $\epsilon >0,$ there is a $N$ s.t.\\
+$|f(x)-f_n(x)|< \epsilon $ whenever $ n>N$\\
+(b) $\{f_n\}$ converges uniformly on $D$ to $f$ if\\ for each $\epsilon >0,$ there is a $N$ s.t.\\
+$|f(x)-f_n(x)|< \epsilon $ whenever $x\in D$ and $ n>N$\\
+-\textbf{TH 3.4.5} Let $\{f_n\}$ be a sequence of functions\\ all of which are defined and cont. on a set $D$.\\ If $\{f_n\}$ converges uniformly to $f$ on $D$, then \\$f$ is cont. on $D$.\\
+-\textbf{TH 3.4.6} Let $\{f_n\}$ be a sequence of fns defined\\ on a set $D$. If there is a sequence of numbers $b_n$\\ s.t. $b_n \rightarrow 0$ and $|f_n (x)| \leq b_n$ for all $x\in D$, then\\ $\{f_n\}$ converges uniformly to $0$ on $D$. \\
+-\textbf{TH 3.4.7} Let $\{f_n\}$ be a sequence of fns defined\\ on a set $D$. If $\{f_n\}$ converges uniformly to 0 \\ on $D$, then $\{f_n(x_n)\}$ converges to 0 for every \\sequence $\{x_n\}$ of points of $D$.\\
+-\textbf{TH 3.4.9} A sequence of fns $\{f_n\}$ on a set $D$ is\\ said to be  uniformly Cauchy on $D$ if for each\\ $\epsilon >0,$ there is $N$ s.t. $|f_n(x)-f_m(x)| < \epsilon$\\ whenever $x \in D$ and $n,m>N$\\
+-\textbf{TH 3.4.10} A sequence of functions $\{f_n\}$ on $D$\\ is uniformly convergent on $D$ iff it is uniformly\\ Cauchy on $D$.\\
+\textbf{The Derivative}\\
+-\textbf{Definition 4.1.1} Let $I$ be an open interval, $a$ a \\point of $I$, and $f$ a fn defined on $I$ except possibly\\ at $a$. Then the limit of $f(x)$ as $x$ approaches $a$\\ is $L$ if, for each $\epsilon >0$, there is a $\delta > 0$ s.t\\ $|f(x)-L| < \epsilon$ when $x \in I$ and $0<|x-a|<\delta$\\
+-\textbf{Definition 4.1.6} Let $f$ be a function defined on\\ an open interval $(a,b)$ where $a$ could be $-\infty$\\ and $b$ could be $+\infty$. The lim from the right is\\ $\lim_{x \to a^{+}} f(x)=L$ if for every $\epsilon >0 $ there is a \\ $m \in (a,b)$ s.t. $|f(x)-L|<\epsilon $ whenever $a<x<m$. \\
+For left limit, it is whenever $m<x<b$\\
+-\textbf{TH 4.1.10} Let $(a,b)$ be a (possibly infinite) \\interval
+and let $u$ be $a^{+}$ or $b^{-}$ or a point in $(a,b)$. \\If $f$ is a fn
+defined on $(a,b)$, then $\lim_{x \to u} f(x)=L$\\ iff  $f(a_n) \to L$ whenever $\{a_n\}$ is a sequence of \\points in $(a,b)$, distinct from $u$, with $a_n \to u$\\
+-\textbf{Main Limit Theorem} Let $(a,b)$ be a (possibly \\ infinite) interval and let $u$ be $a^{+}$ or $b^{-}$ or a point \\in $(a,b)$ and let $c$ be a constant. Let $f$ and $g$ be \\ functions defined on $(a,b)$. If $\lim_{x \to u} f(x)=K$ \\, and $\lim_{x \to u} g(x)=L$ then,\\
+(a) $\lim_{x \to u} c=c$\\
+(b) $\lim_{x \to u} cf(x)=cK$\\
+(c) $\lim_{x \to u} f(x)+g(x)=K+L$\\
+(d) $\lim_{x \to u} f(x)g(x)=KL$\\
+(e) $\lim_{x \to u} f(x)/g(x)=K/L$ provided $L \neq 0$\\
+-\textbf{TH 4.1.12} Let $(a,b)$ be a (possibly infinite) \\interval and let $u$ be $a^{+}$ or $b^{-}$. If $g$ is defined on\\ $(a,b)$ and $\lim_{x \to u} g(x)=L$, $f$ is defined on an\\ interval containing $L$ and the image of $g$, and\\ $f$ is cont. at $L$, then $\lim_{x \to u} f(g(x)=f(L)$.\\
+\end{tabular}
+
+\begin{tabular}{@{}ll@{}}
+-\textbf{TH 4.1.14} If $f$ is a fn defined on $(a,b)$ then \\$\lim_{x \to a^{+}} f(x)= \infty $ if for each $M$, there is a \\ $m \in (a,b)$ s.t $f(x)>M$ whenever $a<x<m$.\\
+-\textbf{TH 4.1.15} Let $(a,b)$ be a (possibly  infinite) \\interval and let $u$ be $a^{+}$ or $b^{-}$ or a point \\in $(a,b)$. If $f$ is positive on $(a,b)$, then\\ $\lim_{x \to u} f(x)= \infty $ iff  $\lim_{x \to u} \frac{1}{f(x)}= 0 $\\
+-\textbf{Def 4.2.1} Let $f$ be a fn defined on an open \\interval containing $a \in \mathbb{R}$. If  $\lim_{x \to a} \frac{f(x)-f(a)}{x-a}$ \\ exist and is finite, we call it $f'(a)$.\\
+$f'$ is a new fn with d consisting of points in the\\ domain of $f$ at which $f$ is differentiable.\\
+or $f'(a)= \lim_{h \to 0} \frac{f(a+h)-f(a)}{h}$\\
+or $f'(x)= \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}$\\
+-\textbf{4.2.5} If $f$ is differentiable at $a$, it is cont. at $a$.\\
+-\textbf{Chain Rule} Supose $g$ is defined in an open\\ interval $I$ containing $a$ and $f$ is defined in an \\ open interval containing $g(I)$. If $g$ is differentiable\\ at $a$ and $f$ is is differentiable at $g(a)$, then $f \circ g$ \\ is differentiable at $a$ and  \\ $(f \circ g)'(a)=f'(g(a))g'(a).$\\
+-\textbf{TH 4.2.9} If $f$ is cont. and strictly monotone\\ on an open interval $I$ containing $a$, $f$ is diff. at\\ $a$, and $f'(a) \neq 0$, then the inverse fn $g$ of $f$ is diff\\ at $b=f(a)$ and $g'(b)=\frac{1}{f'(a)}=\frac{1}{f'(g(b))}$ ex 4.2.10\\
+-\textbf{CP} A critical point is a point that satisfies:\\
+1) c is an endpoint, 2) c is a stationary point, or\\ c is a singular point, $f'(c)$ does not exist.\\
+-\textbf{TH 4.3.1} If $f$ is cont. fn. on a closed bounded \\ interval $[a,b]$ and $c \in [a,b]$ is a max/min, then $c$ \\ is a critical point.\\
+-\textbf{MVT} If $f$ is cont. on the closed interval $[a,b]$\\ and is diff. on the open interval $(a,b)$, then there \\is at least one point $c \in (a,b)$ s.t.\\ $f'(c)=\frac{f(b)-f(a)}{b-a}$\\
+-\textbf{TH 4.3.3} If $f$ is diff. fn. on an open interval\\ $(a,b)$ and $f'$ is 0 on $(a,b)$, then $f$ is constant.\\
+-\textbf{CO 4.3.4} If $f$ and $g$ are diff. on $(a,b)$ and \\ $f'(x)=g'(x)$ for all $x \in (a,b)$ then there is a \\ constant $c$ s.t. $f(x)=g(x)+c$.\\
+-\textbf{TH 4.3.5} If $f$ is a fn. which is cont. on a closed\\
+interval $[a,b]$ and diff. on the open interval $(a,b)$,\\ then $f$ is increasing on $[a,b]$ if $f'(x)>0 $\\ $\forall x \in (a,b)$ and decreasing if $f'(x)<0$\\
+-\textbf{TH 4.3.6} Let $f$ be cont. fn. on $[a,b]$ which is \\
+diff. on $(a,b)$. Then $f$ is non-decreasing on $[a,b]$ \\iff $f'(x)\geq 0$ and non-increasing if $f'(x)\leq 0$\\
+-\textbf{TH 4.3.9} If $f$ is a diff. fn. on a\\ (possibly infinite) open interval $(a,b)$ and $f'$ is \\ bounded on $(a,b)$, then $f$ is uniformly  cont. on\\ $(a,b)$.\\
+-\textbf{Cauchy MVT} Let $f$ and $g$ be fns. which are \\cont. on a closed, bounded interval $[a,b]$ and\\ diff on $(a,b)$. Then there exist $c \in (a,b)$ s.t. \\ $\frac{f(b)-f(a)}{g(b)-g(a)}=\frac{f'(c)}{g'(c)}$\\
+
+\end{tabular} 
+
+\begin{tabular}{@{}ll@{}}
+
+
+-\textbf{L'Hopital's Rule} Let $f$ and $g$ be diff. fns. on \\ a (possibly infinite) interval $(a,b)$ 
+and let $u$ be \\
+$a^{+}$ or $b^{-}$. Suppose $g(x)$ and $g'(x)$ are 
+non-zero\\ on all $(a,b)$ \& (1)$ \lim_{x \to 
+	u}f(x)=0=\lim_{x \to u}g(x)$ \\ or (2) $ \lim_{x \to u}f(x)=\infty=\lim_{x \to u}g(x)$, then\\ $lim_{x \to u}\frac{f(x)}{g(x)}=lim_{x \to u}\frac{f'(x)}{g'(x)}$\\
+-Note: Conditions (1) and (2) refer to the\\ indeterminate form.
+\\
+\textbf{The Integral}\\
+-\textbf{Upper and Lower Sums}\\
+-$U(f,P)=\sum_{k=1}^{n}M_k(x_k-x_{k-1})$, LUB for sums\\of f and P\\
+-$L(f,P)=\sum_{k=1}^{n}m_k(x_k-x_{k-1})$, GLB for sums\\of f and P\\
+-\textbf{Refinement} Let $P$ and $Q$ be partitions of a \\closed bounded interval $[a,b]$. $Q$ is a refinement\\ of $P$ if $P \subset Q$. Partitions are refinements of\\ themselves.\\
+-\textbf{TH 5.1.4} Let $f$ be a bounded fn on a closed\\ bounded interval $[a,b]$ and $Q$ is a refinement of \\$P$, then $L(f,P)\leq L(f,Q)\leq U(f,Q) \leq U(f,Q)$\\
+-\textbf{TH 5.1.5} If $P$ and $Q$ are any two partitions of \\a closed bounded interval $[a,b]$ and $f$ is a \\bounded fn on $[a,b]$ then $L(f,P)\leq U(f,Q)$\\
+-\textbf{The Integral}\\
+$\int_{a}^{-b}f dx=inf\{U(f,Q): Q$ is a partition of $[a,b]\}$\\
+$\int_{-a}^{b}f dx=sup\{L(f,Q): Q$ is a partition of $[a,b]\}$\\
+-\textbf{TH 5.1.7} The Riemann integral of $f$ on $[a,b]$\\ exist iff, for each $\epsilon >0$ there is a partition P of \\ $[a,b]$ s.t. $U(f,P)-L(f,P)< \epsilon $\\
+-\textbf{TH 5.1.8} The Integral exists iff there is a\\ sequence $\{P_n\}$ of partitions of $[a,b]$ s.t.\\ $lim(U(f,P_n))-L(f,P_n))=0$. In this case,\\
+$\int_{a}^{b}f(x)dx=limS_n(f)$ where, for each $n$, $S_n(f)$\\ may be chosen to be $U(f,P_n)$, $L(f,P_n)$, or any \\Riemann sum for $f$ and the partition $P_n$\\
+-\textbf{TH 5.2.1} If $f$ is a monotone fn on a closed\\ bounded interval $[a,b]$ then $f$ is integrable on\\ $[a,b]$\\
+-\textbf{TH 5.2.2} If $f$ is a cont. fn. on a closed bounded \\interval $[a,b]$, then $f$ is integrable on $[a,b]$. \\
+-\textbf{TH 5.2.4} If $f$ and $g$ are integrable fn on $[a,b]$\\ and $f(x) \leq g(x)$ for all $x \in [a,b]$, then\\ $\int_{a}^{b}f(x)dx \leq \int_{a}^{b}g(x)dx$\\
+-\textbf{CO 5.2.5} Let $f$ be an integrable fn on the \\ closed bounded interval $I=[a,b]$ and $M=sup_I f$\\ and $m=inf_I f$. Then \\$m(b-a) \leq \int_{a}^{b}f(x)dx \leq M(b-a)$\\
+-\textbf{TH 5.2.6} If $f$ is integrable on $[a,b]$ then $|f|$ is \\ also integrable on $[a,b]$ and \\
+$|\int_{a}^{b}f(x)dx| \leq \int_{a}^{b}|f(x)|dx$\\
+-\textbf{Mean of Integrals} If $f$ is integrable fn. on a \\ bounded interval $[a,b]$, then the mean of $f$ on \\$[a,b]$ is the number $\frac{1}{b-a}\int_{a}^{b}f(x)dx$\\
+
+-\textbf{TH 5.2.7}If $f$ is a cont. fn. on a closed bounded\\ interval $[a,b]$, then there is a point $c \in [a,b]$ s.t. \\ $f(c)=\frac{1}{b-a} \int_{a}^{b} f(x)dx$\\
+-\textbf{CO 5.2.9} With $f$ and $a \leq b \leq c$, $f$ is integrable\\ on $[a,c]$ iff it is integrable on $[a,b]$ and on $[b,c]$.\\
+\end{tabular} 
+
+
+\begin{tabular}{@{}ll@{}}
+-\textbf{CO 5.2.9} With $f$ and $a \leq b \leq c$, $f$ is integrable\\ on $[a,c]$ iff it is integrable on $[a,b]$ and on $[b,c]$.\\
+-\textbf{CO 5.2.10} If $f$ is a bounded fn on a closed\\bounded interval $[a,b]$ and $f$ is cont. except at \\finitely many points of $[a,b]$, then $f$ is integrable.\\
+-\textbf{First FTC} Let $[a,b]$ be a closed bounded \\interval and let $f$ be a fn. which is cont. on $[a,b]$ \\ and diff. on $(a,b)$ with $f'$ intergrable on $[a,b]$. \\Then $\int_{a}^{b}f'(x)dx=f(b)-f(a)$\\
+-\textbf{Second FTC} Let $f$ be a fn. which is integrable\\ on a closed bounded interval $[b,c]$. For $a,x \in [b,c]$\\ define a fn. $F(x)$ by $F(x)=\int_{a}^{x}f(t)dt$. Then,  $F$ \\is cont. on $[b,c]$. At each point $x$ of $[b,c]$ where\\ $f$ is cont. the fn $F$ is diff. and $F'(x)=f(x)$.\\
+-\textbf{U-Sub} Let $g$ be a diff. fn. on an open interval \\$I$ with $g'$ intergrable on $I$ and let $J=g(I)$. Let \\$f$ be cont. on $J$. Then for any pair $a,b \in I$, \\ $\int_{a}^{b}f(g(t))g'(t)dt=\int_{g(a)}^{g(b)}f(u)du$.\\
+-\textbf{Integration by Parts} Suppose $f$ and $g$ are cont. \\fns. on a closed bounded interval $[a,b]$ and \\suppose that $f$ and $g$ are diff. on $(a,b)$ with\\ derivatives that are integrable on $[a,b]$. Then $fg'$ \\and $f'g$ are integrable on $[a,b]$ and \\ $\int_{a}^{b}f(x) g'(x)dx=$\\$f(b)g(b)-f(a)g(a)-\int_{a}^{b}g(x)f'(x)dx$\\
+\\
+\textbf{Logs, Expos}\\
+-\textbf{TH 5.4.2} For all $a,b \in (0, +\infty)$,\\ $ln(ab)=ln(a) +ln(b)$\\
+-\textbf{TH 5.4.3} If $a>0$ and $r$ is rational, then\\ $ln(a^r)=rln(a$)\\
+-\textbf{TH 5.4.4} The $ln$ is strictly increasing on\\ $(0, +\infty)$. Also, $lim_{x \to \infty}ln(x)=+\infty$ and\\ $lim_{x \to 0}ln(x)=-\infty$\\
+\textbf{Exponential Functions} \\$exp'(x)=exp(x)$\\$exp(a+b)=exp(a)exp(b)$\\$exp(ra)=(exp(a))^r$\\
+$a^x=exp(xln(a))$, $a^{xy}=(a^x)^y$\\
+-\textbf{TH 5.4.9} For each $a>0$, we have \\ $log_ax=\frac{ln(x)}{ln(a)}$\\
+\\
+\textbf{Infinite Series}\\
+\textbf{Def 6.1.1} The series is said to converge\\to the number $s$ if $lim_{n \to \infty}s_n = s$. Here we\\ write $\sum_{k=1}^{\infty} a_k = s$.  S is called the sum of the series.\\  If $\{s_n\}$ diverges, then we say the series diverges.\\
+\textbf{Term Test} If a series $a_1+a_2+a_3+\cdots+a_k+\cdots$\\ converges, then $lim_{n \to \infty}a_n = 0$.  \textbf{Note:} This is not\\ iif.  So $lim_{n \to \infty}a_n = 0 \centernot\implies$ convergence.  However,\\ $lim_{n \to \infty}a_n \centernot = 0 \implies$ divergence\\
+\textbf{Geometric Series Thm} If $a \centernot = 0$\\, the geometric series, $\sum_{k=0}^{\infty} ar^k$, converges to $\frac{a}{1-r}$\\if $|r| < 1$ and diverges otherwise.\\
+\textbf{Non Negative Infinite Series} An infinite\\series of non neg terms converges iif $\{S_n\}$ is bounded\\ above.
+\textbf{Comparison TEst}
+
+
+\end{tabular}
+
+\begin{tabular}{@{}ll@{}}
+\textbf{EXTRA THEOREMS}\\
+-\textbf{Uniform Convergence}A sequence of fns\\ $f_n:I \to \mathbb{R}$ converges uniformly to $f:I \to \mathbb{R}$\\ iff the sequence\\ $a_n=sup_I|f_n-f|$ converges to $0$\\
+-\textbf{Lower and Upper Integral Inequality} \\If $f$ and $g$ are integrable fn on $[a,b]$\\ and $f(x) \leq g(x)$ for all $x \in [a,b]$, then\\ $\int_{--a}^{b}f(x)dx \leq \int_{--a}^{b}g(x)dx$\\ and $\int_{a}^{--b}f(x)dx \leq \int_{a}^{--b}g(x)dx$\\
+-\textbf{Constant K Integrability}\\Let $f,g$ : $[a,b] \to \mathbb{R}$.  Suppose\\ $f$ is integrable and $\exists$ a constant \\K \textless  0 s.t. $|g(x)-g(y)|< K|f(x)-f(y)|$\\ $\forall x,y,\in [a,b]$, then $g$ is integrable.
+\end{tabular} 
+
+
+
+
+
+
+\end{multicols}
+\end{document}
